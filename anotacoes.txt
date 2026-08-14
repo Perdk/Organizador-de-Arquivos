@@ -1,0 +1,11 @@
+__dirname: É uma variável global do Node.js. 
+Ela guarda o caminho absoluto exato até a pasta onde o seu projeto.js está rodando 
+(por exemplo: C:\Users\SuaConta\Desktop\MeuProjeto).
+
+path.join(): É um método do módulo path. 
+Ele pega esse caminho do __dirname e "junta" com "pasta_teste", 
+colocando a barra certa de acordo com o sistema operacional (no Windows ele coloca \, no Linux/Mac coloca /).
+
+fs.readdirSync(): readdir: Significa Read Directory (Ler Diretório).
+Sync: Significa Síncrono. Isso quer dizer que o Node vai parar tudo o que está fazendo, ler a pasta inteira, e só depois continuar para a próxima linha de código.
+Ele recebe o caminho da pasta (pastaAlvo) e nos retorna um Array de Strings contendo o nome de cada item lá dentro (ex: ['foto.png', 'texto.txt', 'minha_pasta']).
